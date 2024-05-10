@@ -2,9 +2,13 @@ import streamlit as st
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import requests
+from io import StringIO
 
-# Load the perfume data
-perfumes = pd.read_csv('Perfume Data.csv', encoding='latin1')
+# Load the perfume data from GitHub
+url = "https://raw.githubusercontent.com/spdini/perfume_recommender/main/Perfume%20Data.csv"
+response = requests.get(url)
+perfumes = pd.read_csv(StringIO(response.text), encoding='latin1')
 
 # Preprocess the data
 perfumes[['Top Notes', 'Heart Notes', 'Based Notes', 'Mood']] = perfumes[['Top Notes', 'Heart Notes', 'Based Notes', 'Mood']].fillna('')
