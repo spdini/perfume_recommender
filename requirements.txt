@@ -198,7 +198,7 @@ pylint @ file:///opt/concourse/worker/volumes/live/110f293a-445f-477b-4041-2e00a
 pyls-spyder==0.4.0
 pymongo==3.12.3
 Pympler==1.0.1
-pyodbc===4.0.0-unsupported
+pyodbc===4.0.0
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1635333100036/work
 pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
 pyrsistent @ file:///opt/concourse/worker/volumes/live/76cffa60-bd33-4155-4e83-ea03c38b1294/volume/pyrsistent_1636111020441/work
