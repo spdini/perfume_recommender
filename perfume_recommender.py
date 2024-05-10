@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import requests
+from io import StringIO
 
 # Load the perfume data from GitHub
 url = "https://raw.githubusercontent.com/spdini/perfume_recommender/main/Perfume%20Data.csv"
